@@ -13,6 +13,8 @@ RUN PATH=$PATH:/usr/local/sbin
 RUN export PATH
 
 RUN mkdir -p /usr/local/src/kamailio-4.4 && \
+
+
     cd /usr/local/src/kamailio-4.4 && \
     git clone --depth 1 --no-single-branch git://git.kamailio.org/kamailio kamailio && \
     cd kamailio && \
