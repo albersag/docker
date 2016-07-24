@@ -26,6 +26,10 @@ RUN wget https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_linux_amd64.zi
 
 RUN unzip consul_0.6.4_linux_amd64.zip 
 
+RUN wget https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_web_ui.zip
+
+RUN unzip consul_0.6.4_web_ui.zip
+
 EXPOSE 8300
 EXPOSE 8301
 EXPOSE 8302
@@ -33,5 +37,4 @@ EXPOSE 8400
 EXPOSE 8500
 EXPOSE 8600
 
-
-CMD ["/root/consul_0.6.4/consul","agent","-server","-bootstrap","-data-dir","/tmp/consul"]
+CMD ["/root/consul_0.6.4/consul","agent","-server","-client","0.0.0.0","-bootstrap","-data-dir","/tmp/consul","-ui-dir","/root/consul_0.6.4/"]
