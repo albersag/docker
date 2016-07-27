@@ -7,7 +7,7 @@
 # will use their internal default values.
 
 ## your SIP domain
-SIP_DOMAIN=10.0.1.16
+SIP_DOMAIN=10.0.100.26
 
 ## chrooted directory
 # $CHROOT_DIR="/path/to/chrooted/directory"
@@ -22,7 +22,7 @@ DBENGINE=MYSQL
 
 ## database host
 
-DBHOST=10.0.1.14
+DBHOST=127.0.0.1
 
 ## database name (for ORACLE this is TNS name)
 DBNAME=kamailio
@@ -47,7 +47,7 @@ DBROPW="kamailioro"
 # DBACCESSHOST=192.168.0.1
 
 ## database super user (for ORACLE this is 'scheme-creator' user)
-# DBROOTUSER="root"
+DBROOTUSER="root"
 
 # user name column
 # USERCOL="username"
@@ -96,13 +96,13 @@ DBROPW="kamailioro"
 #
 
 # If to install tables for the modules in the EXTRA_MODULES variable.
-INSTALL_EXTRA_TABLES=ask
+INSTALL_EXTRA_TABLES=yes
 
 # If to install presence related tables.
-INSTALL_PRESENCE_TABLES=ask
+INSTALL_PRESENCE_TABLES=yes
 
 # If to install uid modules related tables.
-INSTALL_DBUID_TABLES=ask
+INSTALL_DBUID_TABLES=yes
 
 # Define what module tables should be installed.
 # If you use the postgres database and want to change the installed tables, then you
