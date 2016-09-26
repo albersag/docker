@@ -11,7 +11,7 @@ ENV PORT 8888
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get -qy install python-smbus i2c-tools git python-pip python-dev
+    apt-get -qy install python-smbus i2c-tools git python-pip python-dev net-tools
 
 #RUN apt-get install python-rpi.gpio
 
