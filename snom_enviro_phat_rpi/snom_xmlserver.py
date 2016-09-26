@@ -47,17 +47,17 @@ while True:
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F1</Name>"\
                 "\t\t<Label>Reload</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/pressure</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/pressure</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F2</Name>"\
                 "\t\t<Label>Temperature</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/temperature</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/temperature</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F3</Name>"\
                 "\t\t<Label>Light</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/light</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/light</URL>"\
                 "\t</SoftKeyItem>"\
                 "</SnomIPPhoneText>"
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
@@ -85,17 +85,17 @@ while True:
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F1</Name>"\
                 "\t\t<Label>Reload</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/temperature</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/temperature</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F2</Name>"\
                 "\t\t<Label>Pressure</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/pressure</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/pressure</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F3</Name>"\
                 "\t\t<Label>Light</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/light</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/light</URL>"\
                 "\t</SoftKeyItem>"\
                 "</SnomIPPhoneText>"
                 
@@ -124,17 +124,17 @@ while True:
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F1</Name>"\
                 "\t\t<Label>Reload</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/light</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/light</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F2</Name>"\
                 "\t\t<Label>Pressure</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/pressure</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/pressure</URL>"\
                 "\t</SoftKeyItem>"\
                 "\t<SoftKeyItem>"\
                 "\t\t<Name>F3</Name>"\
                 "\t\t<Label>Temperature</Label>"\
-                "\t\t<URL>http://10.0.1.153:8889/temperature</URL>"\
+                "\t\t<URL>http://10.0.1.153:8888/temperature</URL>"\
                 "\t</SoftKeyItem>"\
                                                                 
 
