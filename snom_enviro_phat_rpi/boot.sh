@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IP=$(ip r | awk '/default/{print $3}')
+#IP=$(ip r | awk '/default/{print $3}')
 
 sed -i "s/HOST, PORT =.*/HOST, PORT = '${IP}\', ${PORT}/g" snom_xmlserver.py
 
