@@ -136,9 +136,6 @@ while True:
                 "\t\t<Label>Temperature</Label>"\
                 "\t\t<URL>http://10.0.1.153:8888/temperature</URL>"\
                 "\t</SoftKeyItem>"\
-                                                                
-
-
                 "</SnomIPPhoneText>"                                                                                                                                                                	
 
 
