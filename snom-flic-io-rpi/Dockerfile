@@ -14,11 +14,13 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update 
 
-RUN apt-get update && apt-get install -y wget libsqlite3-0 libglib2.0-0 libical1a libudev1 libjson-glib-1.0-0 libc6 libncurses5 libncurses5-dbg libtinfo5 libtinfo5-dbg libstdc++6 libpcrecpp0 libselinux1 libffi6 libsoup2.4-1 libglib2.0-dev libdbus-1-dev libudev-dev automake libtool libical-dev libreadline-dev git make dbus
+RUN apt-get update && apt-get install -y wget libsqlite3-0 libglib2.0-0 libical1a libudev1 libjson-glib-1.0-0 libc6 libncurses5 libncurses5-dbg libtinfo5 libtinfo5-dbg libstdc++6 libpcrecpp0 libselinux1 libffi6 libsoup2.4-1 libglib2.0-dev libdbus-1-dev libudev-dev automake libtool libical-dev libreadline-dev git make dbus python-setuptools 
 
 WORKDIR /home/snom/
 
 RUN cd /home/snom  && wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.37.tar.xz && tar xvf bluez-5.37.tar.xz
+
+RUN rm /home/snom/*.tar.xz
 
 RUN cd /home/snom/bluez-5.37 && ./configure --enable-experimental --enable-library
 
@@ -32,8 +34,18 @@ WORKDIR /home/snom/flic
 
 RUN tar -zxvf fliclib-linux.tar.gz
 
+RUN rm /home/snom/flic/*.tar.gz
+
+RUN easy_install /home/snom/flic/armv7l/fliclib-cpp/ffi/python/flic/dist/flic-0.1-py2.7.egg
+
 COPY /boot.sh /home/snom
 
 RUN chmod a+x /home/snom/boot.sh
+
+RUN apt-get clean
+
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+#RUN apt-get purge
 
 ENTRYPOINT ["/home/snom/boot.sh"]
