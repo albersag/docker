@@ -40,4 +40,8 @@ COPY /boot.sh /home/snom
 
 RUN chmod a+x /home/snom/boot.sh
 
+RUN apt-get clean
+
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 ENTRYPOINT ["/home/snom/boot.sh"]
