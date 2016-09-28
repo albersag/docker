@@ -36,9 +36,7 @@ WORKDIR /home/snom/flic
 
 RUN tar -zxvf fliclib-linux.tar.gz
 
-RUN cd /home/snom/flic/armv7l/fliclib-cpp/ffi/python/flic/dist 
-
-RUN sudo easy_install flic-0.1-py2.7.egg
+RUN sudo easy_install /home/snom/flic/armv7l/fliclib-cpp/ffi/python/flic/dist/flic-0.1-py2.7.egg
 
 COPY /boot.sh /home/snom
 
