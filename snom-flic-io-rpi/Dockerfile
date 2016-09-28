@@ -20,6 +20,8 @@ WORKDIR /home/snom/
 
 RUN cd /home/snom  && wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.37.tar.xz && tar xvf bluez-5.37.tar.xz
 
+RUN rm /home/snom/*.tar.xz
+
 RUN cd /home/snom/bluez-5.37 && ./configure --enable-experimental --enable-library
 
 RUN cd /home/snom/bluez-5.37 && make
@@ -27,6 +29,8 @@ RUN cd /home/snom/bluez-5.37 && make
 RUN cd /home/snom/bluez-5.37 && make install
 
 RUN mkdir /home/snom/flic && cd /home/snom/flic && wget --no-check-certificate https://github.com/50ButtonsEach/fliclib-linux-dist/releases/download/1-beta3/fliclib-linux.tar.gz
+
+RUN rm /home/snom/flic/*.tar.gz
 
 WORKDIR /home/snom/flic
 
