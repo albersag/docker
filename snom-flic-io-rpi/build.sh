@@ -1,2 +1,2 @@
 echo "Building image..."
-docker build -t snom-flic-io-rpi .
+docker build -t voipnovatos/snom-flic-io-rpi .
