@@ -14,9 +14,9 @@ ENV RTP_PORT_END 10150
 
 RUN apt-get clean && apt-get update
 
-RUN apt-get install -y build-essential openssl libxml2-dev libncurses5-dev uuid-dev sqlite3 libsqlite3-dev pkg-config curl libjansson-dev wget curl unzip wget 
+RUN apt-get install -y build-essential openssl libxml2-dev libncurses5-dev uuid-dev sqlite3 libsqlite3-dev pkg-config curl libjansson-dev wget unzip 
 
-RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-14.0.0.tar.gz | tar xvz
+RUN curl -s http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-14.0.0.tar.gz | tar xvz
 
 WORKDIR /asterisk-14.0.0
 
