@@ -37,7 +37,11 @@ ADD boot_run.sh /etc/
 
 COPY create_database.sh /etc/
 
+COPY create_database_presence.sh /etc/
+
 RUN chmod a+x /etc/create_database.sh
+
+RUN chmod a+x /etc/create_database_presence.sh
 
 RUN mkdir /usr/local/etc/kamailio/certs
 
