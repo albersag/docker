@@ -1,6 +1,5 @@
 #!/bin/bash
-# Program:
-#       This program is install boot run script.
+
 
 MYSQL_PWD=${MYSQL_PWD:-"passwd"}
 ADVERTISED_IP=${ADVERTISED_IP:-"127.0.0.1"}
@@ -18,8 +17,6 @@ service mysql start
 # Auto Create Database
 
 /etc/create_database.sh
-
-/etc/create_database_presence.sh
 
 # Configure kamailio.cfg
 
