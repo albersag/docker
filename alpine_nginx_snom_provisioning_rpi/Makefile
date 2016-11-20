@@ -11,7 +11,7 @@ build:
         
 run:
 
-	docker run -dt -p 80:80 -p 443:443 --name=kamailio -h "kamailio.local" -v /home/pirate/xml:/var/www/localhost/htdocs voipnovatos/alpine-nginx-provisioning-snom-rpi 
+	docker run -dt -p 80:80 -p 443:443 --name=nginx -h "nginx.local" -v /home/pirate/xml:/var/www/localhost/htdocs voipnovatos/alpine-nginx-provisioning-snom-rpi
                 
                 
                 
